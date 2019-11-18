@@ -1,0 +1,37 @@
+@media screen and (max-width:1199px){
+
+}
+
+@media screen and (max-width: 991px){
+ 
+}
+
+@media screen and (max-width: 767px){
+ 
+}
+
+@media screen and (max-width: 440px){
+
+}
+
+/**********************************************************
+
+***       orientation  or landscape responsive css      ***
+
+**********************************************************/
+
+
+@media only screen and (max-width: 1199px) and (orientation: landscape) {
+
+}
+@media only screen and (max-width: 991px) and (orientation: landscape) {
+
+}
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+
+}
+@media only screen and (max-width: 440px) and (orientation: landscape) {
+
+}
+
+
