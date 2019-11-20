@@ -80,6 +80,7 @@ strong {
 ol,
 ul {
   list-style: none;
+  margin-bottom: 0px;
 }
 /* --- tables --------------------- */
 
@@ -170,7 +171,22 @@ hr,
 ***      header section      ***
 
 **********************************/
+.top-header{
+  padding: 5px 0;
+  background-color:#E2F2FF;
+}
+.top-social ul li{
+  margin-right: 10px;
+  color: #2e2e2e;
+}
 
+.top-social ul li i{
+  color: #2e2e2e;
+}
+.top-contact i{
+  color:#2699FB;
+  margin: 0px 10px;
+}
 .fc-modified{
   color:#2699FB;
   border:1px solid #ced4da99;
