@@ -11,6 +11,7 @@ It's a web based apps
 3)then, create features\template
 4)then, create features\doctor_app_template
 4)images copy to folder
+5)created banner 
 
 
 
