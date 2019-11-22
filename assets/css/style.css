@@ -20,6 +20,7 @@ section {
   display: block;
 }
 body {
+  position: relative;
   font-size: 14px;
   font-family: 'Poppins', sans-serif;
   /* height: auto !important; */
@@ -157,7 +158,9 @@ hr,
 **********************************/
 
 
-/******************************************** Project Css Start */
+
+
+/******************************************** Project Css Start ************/
 
 
 /**********************************
@@ -171,18 +174,27 @@ hr,
 ***      header section      ***
 
 **********************************/
+
+/* top header design */
 .top-header{
   padding: 5px 0;
   background-color:#E2F2FF;
 }
+
+/* top social design */
+.top-social ul{
+  padding-left: 0;
+}
 .top-social ul li{
-  margin-right: 10px;
+  margin-right: 20px;
   color: #2e2e2e;
 }
 
 .top-social ul li i{
   color: #2e2e2e;
 }
+
+/* top contact design */
 .top-contact i{
   color:#2699FB;
   margin: 0px 10px;
@@ -190,7 +202,12 @@ hr,
 .fc-modified{
   color:#2699FB;
   border:1px solid #ced4da99;
-  box-shadow: 5px 5px 5px rgba(0,0,0,0.2) ;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+
+/* appointment design */
+.appointment-form{
+  padding: 42px !important;
 }
 .appointment-form form{
   box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
@@ -210,10 +227,11 @@ hr,
   height: 70px;
   padding: 18px;
 }
-
 .appointment-img img{
   width: 20px;
 }
+
+
 
 
 /**********************************
@@ -221,6 +239,105 @@ hr,
 ***           Navbar            ***
 
 **********************************/
+
+
+/* custom navbar design */
+.navbar-design{
+position: absolute;
+top: 50px;
+padding: 0 100px;
+width: 100%;
+box-sizing: border-box;
+background: transparent;
+z-index: 222;
+}
+
+/* logo design */
+.logo1{
+  float: left;
+  width: 100px;
+  line-height: 50px;
+  margin-left: 5px;
+}
+
+/* nav items design */
+.navbar-design nav{
+  float: right;
+}
+
+.navbar-design nav ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.navbar-design nav ul li{
+  list-style: none;
+}
+
+.navbar-design nav ul li a{
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  color: #fff;
+  padding: 0 20px;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 23px;
+  margin-left: 2px;
+}
+
+.navbar-design nav ul li a:hover{
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  background: #2699FB;
+  padding: 0 20px;
+  transition: 0.4s all ease-in-out;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+
+/* menu-toggler design */
+.menu-toggler{
+  color: #fff;
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+
+/* .line1, .line2, .line3{
+  width: 23px;
+  height: 3px;
+  margin: 5px;
+
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+  color: #000000 !important;
+} */
+
+/* .change .line1{
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+      -ms-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+.change .line2{
+  opacity: 0;
+}
+.change .line3{
+  -webkit-transform: rotate(45deg) translate(-5px,-6px);
+      -ms-transform: rotate(45deg) translate(-5px,-6px);
+          transform: rotate(45deg) translate(-5px,-6px);
+}
+
+.black{
+  background: rgba(0,0,0,.4);  
+}
+.blackAgain{
+  background: rgba(0,0,0,.4);   
+} */
 
 /**********************************
 
@@ -242,7 +359,7 @@ hr,
 
 /**********************************
 
-***    portfolio     ***
+***      portfolio     ***
 
 **********************************/
 

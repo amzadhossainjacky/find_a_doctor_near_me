@@ -13,21 +13,22 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!-- end of bootstrap link -->
     <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-    <!-- end of animate css link -->  
+    <!-- end of animate css link -->
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <!-- end of magnific-popup link --> 
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
-    <!-- end of style css link --> 
+    <!-- end of magnific-popup link -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <!-- end of style css link -->
     <link rel="stylesheet" media="screen" href="assets/css/responsive.css">
     <!-- end of responsive css link -->
 </head>
 
 <body>
-    <header class="banner-section">
+    <!-- header-section -->
+    <header class="header-section">
         <div class="top-header">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 p-0">
                         <div class="top-social">
                             <ul class="d-flex">
                                 <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -36,27 +37,52 @@
                                 <li><a class="linked-in" href="#"><i class="fab fa-linkedin-in"></i></a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div><!--end of top-social -->
                     <div class="col-lg-8">
                         <div class="top-contact">
                             <ul class="d-flex justify-content-end align-items-center">
-                                <li><i class="fas fa-envelope"></i>support@findnme.com</li>
+                                <li><i class="fas fa-envelope"></i>support@findme.com</li>
                                 <li><i class="fas fa-phone-square"></i>23467</li>
                             </ul>
-                        </div>
+                        </div><!--end of top-contact -->
                     </div>
                 </div>
             </div>
         </div>
+    </header>
+    <!--end of header-section -->
+    
+    <!--navbar section -->
+    <section  class="navbar-design">
+        <div>
+            <span class="logo1">
+                <a href="index.html"><img src="images/landing_images/doctor-header-logo.png" alt=""></a>
+            </span>
+            <nav>
+                <ul>
+                    <li><a class="menu-item" href="index.html">Sign Up</a></li>
+                    <li><a class="menu-item" href="#about-section">Login</a></li>
+                    <li><a class="menu-item" href="#service-section">Book Appointment</a></li>
+                    <li><a class="menu-item" href="#portfolio-section">Doctor's corner</a></li>
+                </ul>
+            </nav><!--end of navbar -->
+            <div class="menu-toggler"><i class="fas fa-bars"></i><br></div>
+        </div>
+    </section>
+    <!--end of navbar section -->
+
+    <!--banner-section -->
+    <section class="banner-section">
         <div class="container-fluid p-0">
             <div class="row no-gutters text-center justify-content-center">
-                <div class="col-lg-5 mt-5">
-                    <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-5 mt-5 order-md-0 order-1">
+                    <div class="row justify-content-center m-0">
                         <div class="col-10">
-                            <div class="appointment-form p-5">
+                            <div class="appointment-form">
                                 <form action="">
                                     <div class="form-group">
-                                        <input class="form-control fc-modified" type="text" placeholder="Choose location">
+                                        <input class="form-control fc-modified" type="text"
+                                            placeholder="Choose location">
                                     </div>
                                     <div class="form-group">
                                         <select class="form-control fc-modified">
@@ -72,29 +98,31 @@
                                             <option>Dr. Abdullah</option>
                                         </select>
                                     </div>
-                                </form>
+                                </form><!-- end of appointment-form -->
                                 <div class="appointment-content">
                                     <h2>Book Appointment Now!</h2>
                                     <div class="appointment-img">
-                                        <a href=""><img src="images/landing_images/book-appoin-action-button.png" alt=""></a>
+                                        <a href=""><img src="images/landing_images/book-appoin-action-button.png"
+                                                alt=""></a>
                                     </div>
-                                </div>
+                                </div><!-- end of appointment-content -->
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-7">
+                <div class="col-lg-7 col-md-7 order-md-1 order-0">
                     <div class="banner-img">
                         <img src="images/landing_images/banner.png" alt="">
                     </div>
-                </div>
+                </div><!-- end of banner-img -->
             </div>
         </div>
-    </header>
+    </section>
+    <!--end of banner-section -->
+
     <!-- scripting integrate -->
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <!-- end of jquery script link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <!-- end of popper script link -->
@@ -107,7 +135,7 @@
     <script src="js/slick.min.js"></script>
     <!-- end of slick slider js link -->
     <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <!-- end of magnific-popup js link -->
     <script src="js/jquery.countup.min.js"></script>
     <!-- end of counter js link -->
@@ -116,16 +144,24 @@
 
     <!-- start above js code implementation -->
     <script>
+        /* nav-design */
+        $(document).ready(function () {
+            $('.menu-toggler').click(function () {
+                $('nav').toggleClass('active')
+            })
+        })
+        /* end of nav-design */
+
         //counter
         $('.myCounter').countUp({
-        'time': 2000,
-        'delay': 10
+            'time': 2000,
+            'delay': 10
         });
 
         //smooth scroll plugin added
         var scroll = new SmoothScroll('a[href*="#"]', {
-        speed: 500,
-        speedAsDuration: true
+            speed: 500,
+            speedAsDuration: true
         });
     </script>
     <!-- end of above js code implementation -->

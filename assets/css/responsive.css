@@ -1,17 +1,52 @@
-@media screen and (max-width:1199px){
-
+@media screen and (max-width: 1199px) {
 }
 
-@media screen and (max-width: 991px){
- 
+@media screen and (max-width: 991px) {
+  
+  /* navbar & toggler design */
+  .menu-toggler {
+    display: block;
+  }
+  .logo1 {
+    background-color: #fff;
+    padding: 0px 10px;
+  }
+  .navbar-design {
+    background: #269aff;
+  }
+  .navbar-design nav {
+    position: absolute;
+    width: 35%;
+    height: calc(100vh - 50px);
+    top: 50px;
+    background: #269aff;
+    left: -100%;
+    transition: 0.5s;
+  }
+  .navbar-design nav.active {
+    left: 0;
+  }
+  .navbar-design nav ul {
+    display: block;
+    text-align: center;
+  }
+
+  .navbar-design nav ul:first-child {
+    margin-top: 50px;
+  }
+  .navbar-design nav ul li a {
+    border-bottom: 1px solid #185285;
+  }
+  .navbar-design nav ul li a:hover {
+    background: #fff;
+    color: #269aff;
+  }
 }
 
-@media screen and (max-width: 767px){
- 
+@media screen and (max-width: 767px) {
 }
 
-@media screen and (max-width: 440px){
-
+@media screen and (max-width: 440px) {
 }
 
 /**********************************************************
@@ -20,18 +55,11 @@
 
 **********************************************************/
 
-
 @media only screen and (max-width: 1199px) and (orientation: landscape) {
-
 }
 @media only screen and (max-width: 991px) and (orientation: landscape) {
-
 }
 @media only screen and (max-width: 767px) and (orientation: landscape) {
-
 }
 @media only screen and (max-width: 440px) and (orientation: landscape) {
-
 }
-
-
