@@ -82,6 +82,7 @@ ol,
 ul {
   list-style: none;
   margin-bottom: 0px;
+  padding: 0px;
 }
 /* --- tables --------------------- */
 
@@ -169,6 +170,11 @@ hr,
 
 **********************************/
 
+.global-heading h1{
+  font-size: 30px;
+  color: #474c6b;
+  margin-bottom: 50px;
+}
 /**********************************
 
 ***      header section      ***
@@ -341,52 +347,323 @@ z-index: 222;
 
 /**********************************
 
-***       about-section        ***
-
-**********************************/
-
-/**********************************
-
 ***        service section      ***
 
 **********************************/
+.service-section{
+  padding: 100px 0px;
+}
+.service-img{
+  position: relative;
+}
+.service-img-content h2{
+  color: #fff;
+  margin-bottom: 10px;
+}
+.service-img-content p{
+  color: #fff;
+}
+.service-img::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  opacity: .3;
+}
+
+.service-img-content{
+  position: absolute;
+  width: 220px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+}
+
+.service-img::after{
+  position: absolute;
+  content: "";
+  left: 0;
+  top:  99%;
+  height: 1%;
+  width: 100%;
+  background-color: #0C85FF;
+  opacity: 0.0;
+}
+
+.service-img:hover.service-img::after{
+  top: 0;
+  height: 100%;
+  transition: .4s all ease-in;
+  opacity: 0.6;
+}
+
+
+
 
 /**********************************
 
-***     Quote section       ***
+***     Choose section       ***
 
 **********************************/
+.choose-section{
+  padding: 100px 0px;
+  background: url(../../images/landing_images/slider_bg.png) no-repeat center center;
+  background-size: cover;
+}
 
-/**********************************
+.choose-img img{
+  border-radius: 20px; 
+}
 
-***      portfolio     ***
+.choose-img{
+  position: relative;
+  z-index: 15;
+}
+.choose-img::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 98%;
+  top:-20px;
+  left:35px ;
+  border-radius: 20px;
+  border: 3px solid #000;
+  z-index: -10;
+}
+.choose-circle{
+  height: 10px;
+  width: 10px;
+  background-color: #000000;
+  border-radius: 100px;
+  margin:0px 10px 0px 80px;
+  display: inline-block;
+  
+}
 
-**********************************/
+.choose-content ul {
+  display: block;
+}
+.choose-content li{ 
+  list-style: none;
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  vertical-align: middle;
+}
+
+
+.choose-section .carousel-indicators {
+  bottom: -70px;
+}
+
+.choose-section .carousel-indicators li{
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border: 1px solid #00000045;
+  border-radius: 100px;
+}
+.choose-section .carousel-indicators li.active{
+  background-color:  #474c6b;;
+}
+
 
 /**********************************
 
 ***     counter section       ***
 
 **********************************/
+.counter-section{
+  padding: 100px 0px;
+  background: url(../../images/landing_images/counter.png) no-repeat center center;
+  background-size: cover;
+}
 
+.count{
+    height: 180px;
+    width: 180px;
+    border: 1px solid #000;
+    padding: 16px;
+    border-radius: 100px;
+    display: block;
+    padding: 46px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.count strong{
+  font-size: 20px;
+  margin-left: 20px;
+  color: #000;
+}
+
+.count p{
+  font-size: 20px;
+  line-height: 25px;
+  margin-left: 20px;
+}
+.count img{
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.counter-p img{
+  width: 70px;
+}
+.counter-p p, .counter-p span ,.counter-p strong{
+  color: #F17878;
+}
+.counter-p{
+  border: 1px solid #F17878;
+}
+
+.counter-d p, .counter-d span, .counter-d strong{
+  color: #7F69F1;
+}
+.counter-d{
+  border: 1px solid #7F69F1;
+}
+
+
+.counter-l p, .counter-l span, .counter-l strong{
+  color: #6A79F9;
+}
+.counter-l{
+  border: 1px solid #6A79F9;
+}
 /**********************************
 
-***        contact section      ***
+***      testimonial section       ***
 
 **********************************/
+.testimonial-content img{
+  width: 50px;
+}
+.testimonial-content span{
+font-size: 22px;
+font-weight: 600;
+margin-left: 20px;
+}
 
-/**********************************
 
-***      instagram section       ***
+#carousel-testimonials img{
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  margin-bottom: 30px;
+}
 
-**********************************/
-
+.comma{
+  font-size: 30px;
+  margin-right: 10px;
+}
+/* .testimonial-section .carousel-control-prev-icon{
+  color: #00B1FF;
+} */
+#carousel-testimonials h4{
+  padding: 0px 50px;
+}
+.next-icon{
+  color: #6a79f9;
+  font-size: 30px;
+}
+.prev-icon{
+  color: #6a79f9;
+  font-size: 30px;
+}
 /**********************************
 
 ***      footer section       ***
 
 **********************************/
- 
+.footer-section{
+  background-color: #EFF7FF;
+  padding-left: 100px 0px;
+}
+
+.footer-logo img{
+  height: 30px;
+  width: 100px;
+}
+.footer-logo p{
+  margin-top: 15px;
+  text-align: justify;
+  color: #000;  
+}
+
+.f-social{
+  display: table;
+  margin: 0 auto;
+}
+.f-social h3{
+  margin-top: 5px;
+  font-size: 22px;
+}
+.f-social ul li {
+  margin: 5px 0px;
+}
+.f-social ul li:first-child {
+  margin-top: 10px;
+}
+.f-social ul li:last-child {
+  margin-bottom: 0px 0px;
+}
+.footer-social ul li:first-child{
+  margin-top: 5px;
+}
+.footer-social ul li a{
+  display: block;
+  font-size: 18px;
+  margin-right: 10px;
+  padding: 5px 10px;
+}
+.footer-social ul li a:first-child{
+  padding-left: 0px;
+}
+.footer-social .facebook{
+  color: #3F91EE;
+}
+.footer-social .instagram{
+  color: #FBAF00;
+}
+.footer-social .twitter{
+  color: #00B1FF;
+}
+.footer-social .google-plus{
+  color: #FF0000;
+}
+.footer-location{
+  display: table;
+  margin: 0 auto;
+}
+.footer-location h3{
+  margin-top: 5px;
+  font-size: 22px;
+}
+
+.footer-location span{
+  font-size: 15px;
+  color: #000;
+}
+.footer-location i{
+  font-size: 15px;
+}
+.footer-location button{
+  background: #2699FB;
+  color: #fff;
+}
 /**********************************
 
 ***         Extra Design        ***
