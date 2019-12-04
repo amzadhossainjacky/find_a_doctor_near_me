@@ -235,8 +235,11 @@ hr,
 }
 .appointment-img img{
   width: 20px;
-}
 
+  animation-name: continuosMove;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
 
 
 
@@ -661,8 +664,11 @@ margin-left: 20px;
   font-size: 15px;
 }
 .footer-location button{
-  background: #2699FB;
+  background: #7f69f1;
   color: #fff;
+}
+.footer-location button:hover{
+  background: #2699FB;
 }
 /**********************************
 
@@ -674,6 +680,52 @@ margin-left: 20px;
   color: #2699FB !important;
   font-size: 16px;
   padding-left: 3px !important;
+}
+
+
+
+/**********************************
+
+***       login page            ***
+
+**********************************/
+.login-form{
+  padding: 42px !important;
+  margin: 100px 0px;
+}
+.login-form form{
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+  padding: 50px 30px;
+  border-radius: 10px;
+}
+.login-form h2{
+  margin: 50px 0px;
+  color:#474c6b;
+}
+.login ul li a{
+  color: #7a7c82 !important;
+}
+
+.login ul li a:hover{
+  color: #fff !important;
+  transition: 2s all ease;
+}
+
+.login label{
+  font-weight: 600;
+}
+
+.login-button button{
+  padding: 5px 30px;
+  border-radius: 50px;
+  font-size: 18px;
+  background-color: #2699FB;
+  color: #fff;
+  box-shadow: none;
+  border: 1px solid #2699FB;
+  margin-top: 10px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+  cursor: pointer;
 }
 
 /**********************************
