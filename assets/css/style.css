@@ -295,12 +295,13 @@ z-index: 222;
   margin-left: 2px;
 }
 
-.navbar-design nav ul li a:hover{
-  height: 50px;
-  line-height: 50px;
-  display: block;
+.navbar-design nav ul li .active{
   background: #2699FB;
-  padding: 0 20px;
+  transition: 0.4s all ease-in-out;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+.navbar-design nav ul li a:hover{
+  background: #2699FB;
   transition: 0.4s all ease-in-out;
   box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
 }

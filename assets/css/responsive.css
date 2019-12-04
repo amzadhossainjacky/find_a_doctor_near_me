@@ -41,6 +41,12 @@
     background: #fff;
     color: #269aff;
   }
+
+  .navbar-design nav ul li .active{
+    background: #2699FB;
+    transition: none;
+    box-shadow: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
