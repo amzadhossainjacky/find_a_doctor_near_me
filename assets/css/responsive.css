@@ -50,9 +50,62 @@
 }
 
 @media screen and (max-width: 767px) {
+
+
+  /* sidebar design */
+  .sidebar {
+    width: 120px !important;
+    display: none;
+  }
+  .sidebar .user-img{
+    display: block;
+  }
+  .sidebar .user-img img{
+    height: 50px;
+    width: 50px;
+  }
+  .sidebar h3{
+    margin: 15px 0px;
+    font-size: 12px;
+  }
+  
+  .sidebar ul{
+    display: block;
+    padding: 15px 0px;
+  }
+  .sidebar ul li{
+    display: block;
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  .sidebar ul li a{
+    display: block;
+    font-size: 10px;
+  }
+  
+  .sidebar ul li i{
+    padding: 8px 0px;
+    margin-left: 0px;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  #sidebarToggle{
+    display: block;
+  }
+
+  .sidebar.activeSidebar {
+    display: block;
+    transition: 2s all ease-in-out;
+  }
 }
 
 @media screen and (max-width: 440px) {
+  .sidebar h3{
+    font-size: 10px;
+  }
 }
 
 /**********************************************************

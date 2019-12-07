@@ -750,7 +750,7 @@ margin-left: 20px;
 }
 
 .patient-nav-design .logo{
-  color: #000;;
+  color: #000;
 }
 
 .patient-nav-design .left-nav-icon i{
@@ -872,6 +872,10 @@ margin-left: 20px;
   color: #fff;
   padding: 15px 5px;
   margin-left: 20px;
+}
+
+#sidebarToggle{
+  display: none;
 }
 /**********************************
 

@@ -201,8 +201,13 @@
     <!-- end of above js code implementation -->
 	
 	<script>
+
         /* nav-design */
-        
+        $(document).ready(function () {
+            $("#sidebarToggle").click(function () {
+                $(".sidebar").toggleClass("activeSidebar");
+            });
+        });
         /* end of nav-design */
     </script>
 </body>
