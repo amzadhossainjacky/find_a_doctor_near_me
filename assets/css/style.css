@@ -25,6 +25,7 @@ body {
   font-family: 'Poppins', sans-serif;
   /* height: auto !important; */
   height: 100%;
+  overflow-x: hidden;
   /* min-height: 100%; */
   /* max-height: 100%; */
 }
@@ -84,14 +85,7 @@ ul {
   margin-bottom: 0px;
   padding: 0px;
 }
-/* --- tables --------------------- */
 
-caption,
-th,
-td {
-  text-align: left;
-  font-weight: 400;
-}
 /* --- images --------------------- */
 img {
   max-width: 100%;
@@ -159,9 +153,9 @@ hr,
 **********************************/
 
 
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
-
-/******************************************** Project Css Start ************/
+/******************************************** Project css Start ************/
 
 
 /**********************************
@@ -175,6 +169,7 @@ hr,
   color: #474c6b;
   margin-bottom: 50px;
 }
+
 /**********************************
 
 ***      header section      ***
@@ -240,7 +235,6 @@ hr,
   animation-duration: 3s;
   animation-iteration-count: infinite;
 }
-
 
 
 /**********************************
@@ -354,6 +348,7 @@ z-index: 222;
 ***        service section      ***
 
 **********************************/
+
 .service-section{
   padding: 100px 0px;
 }
@@ -408,14 +403,12 @@ z-index: 222;
   opacity: 0.6;
 }
 
-
-
-
 /**********************************
 
 ***     Choose section       ***
 
 **********************************/
+
 .choose-section{
   padding: 100px 0px;
   background: url(../../images/landing_images/slider_bg.png) no-repeat center center;
@@ -462,7 +455,6 @@ z-index: 222;
   letter-spacing: 0.1rem;
   vertical-align: middle;
 }
-
 
 .choose-section .carousel-indicators {
   bottom: -70px;
@@ -540,13 +532,13 @@ z-index: 222;
   border: 1px solid #7F69F1;
 }
 
-
 .counter-l p, .counter-l span, .counter-l strong{
   color: #6A79F9;
 }
 .counter-l{
   border: 1px solid #6A79F9;
 }
+
 /**********************************
 
 ***      testimonial section       ***
@@ -560,7 +552,6 @@ font-size: 22px;
 font-weight: 600;
 margin-left: 20px;
 }
-
 
 #carousel-testimonials img{
   height: 100px;
@@ -587,6 +578,7 @@ margin-left: 20px;
   color: #6a79f9;
   font-size: 30px;
 }
+
 /**********************************
 
 ***      footer section       ***
@@ -671,6 +663,7 @@ margin-left: 20px;
 .footer-location button:hover{
   background: #2699FB;
 }
+
 /**********************************
 
 ***         Extra Design        ***
@@ -682,7 +675,6 @@ margin-left: 20px;
   font-size: 16px;
   padding-left: 3px !important;
 }
-
 
 
 /**********************************
@@ -732,28 +724,48 @@ margin-left: 20px;
 
 /**********************************
 
-*********************************************   patient dash board design ***
+*********************************************   Dash board design ***
 
 **********************************/
 
-.patient-nav-design{
+/**********************************
+
+***     Dash board global       ***
+
+**********************************/
+.u-border{
+  height: 1px;
+  width: 90%;
+  display:block;
+  margin: 20px auto;
+  background-color: rgba(202, 202, 186, 1);
+}
+
+/**********************************
+
+***         Dash Navbar         ***
+
+**********************************/
+
+
+.dashboard-nav-design{
   background: #E2F2FF;
 }
 
 .navbar-nav .nav-item.dropdown.no-arrow .dropdown-toggle::after {
   display: none;
 }
-.patient-nav-design .navbar-expand .navbar-nav .nav-link {
+.dashboard-nav-design .navbar-expand .navbar-nav .nav-link {
   padding-right: .5rem;
   padding-left: .5rem;
   color: #000;
 }
 
-.patient-nav-design .logo{
+.dashboard-nav-design .logo{
   color: #000;
 }
 
-.patient-nav-design .left-nav-icon i{
+.dashboard-nav-design .left-nav-icon i{
   color: #000;
 }
 
@@ -820,6 +832,12 @@ margin-left: 20px;
 }
  */
 
+ /**********************************
+
+***         Sidebar  design      ***
+
+**********************************/
+
 .sidebar {
   width: 225px !important;
   background: #61B5FB;
@@ -877,6 +895,92 @@ margin-left: 20px;
 #sidebarToggle{
   display: none;
 }
+
+.new-appointment a{
+  background-color: #2699FB;
+  color: #fff;
+  padding: 8px 30px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+} 
+/* patient card design */
+.c-app-card i, .u-app-card i, .p-app-card i{
+  margin-right: 5px;
+  font-size: 15px;
+  color: #2699FB;
+}
+
+.c-app-card, .u-app-card, .p-app-card{
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+
+.c-app-card:hover, .u-app-card:hover, .p-app-card:hover{
+  background-color: #2699FB;
+}
+.c-app-card:hover h5, .u-app-card:hover h5, .p-app-card:hover h5{
+  color: #fff;
+}
+.c-app-card:hover p, .u-app-card:hover p, .p-app-card:hover p{
+  color: #fff;
+}
+
+.c-app-card:hover i, .u-app-card:hover i, .p-app-card:hover i{
+  color: #fff;
+}
+
+/* active */
+.c-app-card.active, .u-app-card.active, .p-app-card.active{
+  background-color: #2699FB;
+}
+
+.c-app-card.active h5, .c-app-card.active p , .c-app-card.active i{
+  color: #fff;
+}
+
+.u-app-card.active h5, .u-app-card.active p, .u-app-card.active i{
+  color: #fff;
+}
+
+.p-app-card.active h5,.p-app-card.active p, .p-app-card.active i{
+  color: #fff;
+}
+/* details */
+.apt-time h4{
+  font-size: 20px;
+}
+
+.p-doc-info span{
+  display: block;
+  margin-top: 10px;
+}
+.b-slot-info i, .on-serial i, .e-time-info i{
+ margin-right: 5px;
+ font-size: 18px;
+}
+
+.b-slot-info span{
+  margin-top: 10px;
+  display: inline-block;
+}
+.b-slot-info p{
+  color: #000;
+}
+
+.on-serial strong{
+  font-size: 30px;
+  margin-top: 10px;
+  display: block;
+}
+
+.e-time-info strong{
+  font-size: 30px;
+  margin-top: 10px;
+  display: block;
+}
+
+
 /**********************************
 
 ***   Slick section      ***
@@ -1001,11 +1105,11 @@ margin-left: 20px;
 }
 
 
-/**********************************
+/************************************* *** *** *** *** 
 
-***         Key Frames        ***
+***     Key Frames   for animation     ***
 
-**********************************/
+************************************* *** *** *** ***/
 
 @-webkit-keyframes animLeft{
   0%{

@@ -51,6 +51,11 @@
 
 @media screen and (max-width: 767px) {
 
+/**********************************
+
+***      DashBoard design       ***
+
+**********************************/
 
   /* sidebar design */
   .sidebar {
@@ -68,7 +73,6 @@
     margin: 15px 0px;
     font-size: 12px;
   }
-  
   .sidebar ul{
     display: block;
     padding: 15px 0px;
@@ -78,12 +82,10 @@
     font-size: 15px;
     text-align: center;
   }
-  
   .sidebar ul li a{
     display: block;
     font-size: 10px;
   }
-  
   .sidebar ul li i{
     padding: 8px 0px;
     margin-left: 0px;
@@ -91,11 +93,9 @@
     text-align: center;
     font-size: 14px;
   }
-
   #sidebarToggle{
     display: block;
   }
-
   .sidebar.activeSidebar {
     display: block;
     transition: 2s all ease-in-out;

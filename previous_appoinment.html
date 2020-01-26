@@ -125,7 +125,7 @@
                 <div class="row justify-content-around">
                     <div class="col-lg-4">
                         <a href="patient_dashboard.html">
-                            <div class="card c-app-card active">
+                            <div class="card c-app-card">
                                 <div class="card-body ">
                                     <h5 class="card-title"><i class="far fa-calendar-check"></i> Current Appointment</h5>
                                     <p class="card-text">See your current appointment. You can check in details below.</p>
@@ -144,7 +144,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="card p-app-card">
+                        <div class="card p-app-card active">
                             <a href="previous_appoinment.html">
                                 <div class="card-body">
                                     <h5 class="card-title"><i class="fas fa-history"></i> Previous Appointment</h5>
@@ -155,42 +155,40 @@
                     </div>
                 </div>
                 <!-- appointment book slot details -->
-                <div class="row mt-5 text-center">
+                <div class="row mt-5">
                     <div class="col-12 col-lg-12">
-                        <div class="apt-time">
-                            <h4>November 12, 2019</h4>
-                        </div>
+                        <table class="table table-striped pre-app-table">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">DATE</th>
+                                <th scope="col">DOCTOR</th>
+                                <th scope="col">BOOKED TIME</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>November 5, 2019</td>
+                                <td>Dr. Abdullah</td>
+                                <td>7:30am - 7:50am</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>November 3, 2019</td>
+                                <td>Dr. Abdullah</td>
+                                <td>7:30am - 7:50am</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td>November 2, 2019</td>
+                                <td>Dr. Abdullah</td>
+                                <td>7:30am - 7:50am</td>
+                              </tr>
+                            </tbody>
+                          </table>
                     </div>
                 </div>
-                <div class="row mt-5 text-center">
-                    <div class="col-3 col-lg-3">
-                        <div class="p-doc-info">
-                            <h5>Dr. Ahmed Sayeed</h5>
-                            <span>Medicine specialist <br>MBBS Dhaka, FCPS UK </span>
-                        </div>
-                    </div>
-                    <div class="col-3 col-lg-3">
-                        <div class="b-slot-info">
-                            <h5><i class="far fa-clock"></i>Booked Slot</h5>
-                            <span>7.30pm</span> 
-                            <span>- 7.50pm</span> 
-                            <p>Your serial no: 44</p>
-                        </div>
-                    </div>
-                    <div class="col-3 col-lg-3">
-                        <div class="on-serial">
-                            <h5><i class="fab fa-whmcs"></i>Ongoing Serial</h5>
-                            <strong>23</strong>
-                        </div>
-                    </div>
-                    <div class="col-3 col-lg-3">
-                        <div class="e-time-info">
-                            <h5><i class="far fa-hourglass"></i>Estimated Time</h5>
-                            <strong>1hrs 30 mins</strong>
-                        </div>
-                    </div>
-                </div>
-                <span class="u-border"></span>
             </div>
         </div>
     </div>
